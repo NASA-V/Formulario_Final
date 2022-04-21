@@ -50,7 +50,7 @@ Partial Class carritomenu
         Me.Label1.ForeColor = System.Drawing.SystemColors.HighlightText
         Me.Label1.Location = New System.Drawing.Point(3, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(122, 38)
+        Me.Label1.Size = New System.Drawing.Size(103, 31)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Carrito"
         '
@@ -67,13 +67,13 @@ Partial Class carritomenu
         '
         'carritomenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(947, 450)
+        Me.ClientSize = New System.Drawing.Size(947, 456)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

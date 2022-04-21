@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Public Class Class1
-    Dim cnx As New SqlConnection("Data Source=DESKTOP-CKS2QM4;Initial Catalog=administrador;Integrated Security=True")
+    Dim cnx As New SqlConnection("Data Source=DMC;Initial Catalog=Aplicacion_Productos;Integrated Security=True")
 
     Public Function Listarusuario() As DataTable
         Dim da As New SqlDataAdapter("pb_listar", cnx)

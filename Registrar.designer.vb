@@ -35,74 +35,82 @@ Partial Class Registrar
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(25, 46)
+        Me.Label1.Location = New System.Drawing.Point(19, 37)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(135, 17)
+        Me.Label1.Size = New System.Drawing.Size(101, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre de Usuario:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(25, 87)
+        Me.Label2.Location = New System.Drawing.Point(19, 71)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 17)
+        Me.Label2.Size = New System.Drawing.Size(64, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Contraseña:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(25, 123)
+        Me.Label3.Location = New System.Drawing.Point(19, 100)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(148, 17)
+        Me.Label3.Size = New System.Drawing.Size(110, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Confirmar contraseña:"
         '
         'txtNusuario
         '
-        Me.txtNusuario.Location = New System.Drawing.Point(169, 47)
+        Me.txtNusuario.Location = New System.Drawing.Point(127, 38)
+        Me.txtNusuario.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNusuario.Name = "txtNusuario"
-        Me.txtNusuario.Size = New System.Drawing.Size(231, 22)
+        Me.txtNusuario.Size = New System.Drawing.Size(174, 20)
         Me.txtNusuario.TabIndex = 3
         '
         'txtNcontrasena
         '
-        Me.txtNcontrasena.Location = New System.Drawing.Point(169, 87)
+        Me.txtNcontrasena.Location = New System.Drawing.Point(127, 71)
+        Me.txtNcontrasena.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtNcontrasena.Name = "txtNcontrasena"
-        Me.txtNcontrasena.Size = New System.Drawing.Size(231, 22)
+        Me.txtNcontrasena.Size = New System.Drawing.Size(174, 20)
         Me.txtNcontrasena.TabIndex = 4
         '
         'txtCNcontrasena
         '
-        Me.txtCNcontrasena.Location = New System.Drawing.Point(169, 123)
+        Me.txtCNcontrasena.Location = New System.Drawing.Point(127, 100)
+        Me.txtCNcontrasena.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtCNcontrasena.Name = "txtCNcontrasena"
-        Me.txtCNcontrasena.Size = New System.Drawing.Size(231, 22)
+        Me.txtCNcontrasena.Size = New System.Drawing.Size(174, 20)
         Me.txtCNcontrasena.TabIndex = 5
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(87, 173)
+        Me.Button1.Location = New System.Drawing.Point(65, 141)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(122, 33)
+        Me.Button1.Size = New System.Drawing.Size(92, 27)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Cancelar"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(235, 173)
+        Me.Button2.Location = New System.Drawing.Point(176, 141)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(122, 33)
+        Me.Button2.Size = New System.Drawing.Size(92, 27)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Agregar Usuario"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Form2
+        'Registrar
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(429, 218)
+        Me.ClientSize = New System.Drawing.Size(322, 177)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtCNcontrasena)
@@ -111,7 +119,8 @@ Partial Class Registrar
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "Form2"
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "Registrar"
         Me.Text = "Form2"
         Me.ResumeLayout(False)
         Me.PerformLayout()

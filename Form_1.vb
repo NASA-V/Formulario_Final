@@ -1,4 +1,4 @@
-﻿Imports ClassLibrary1
+﻿
 Public Class Form1
 
     Dim obj As New Class1

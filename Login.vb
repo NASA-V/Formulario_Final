@@ -9,7 +9,7 @@ Public Class Login
             Dim n = comando.ExecuteScalar()
             If (n > 0) Then
                 MsgBox("INICIO DE SESION CORRECTO" & n)
-                menub.Show()
+                Form10.Show()
 
                 Me.Hide()
 
@@ -44,7 +44,7 @@ Public Class Login
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        menub.Show()
+        Form10.Show()
 
 
     End Sub

@@ -34,13 +34,13 @@ Public Class carritomenu
         InitializeComponent()
         verticalfondo = 55
         For cargar = 1 To 99
-            If menub.almacena(cargar) > 0 Then
-                alamcenaid(cargar) = menub.almacena(cargar)
+            If Form10.almacena(cargar) > 0 Then
+                alamcenaid(cargar) = Form10.almacena(cargar)
             End If
         Next
         For b = 1 To 20
-            If menub.almacena(b) = 0 Then
-                menub.almacena(b) = menub.almacena(b + 1)
+            If Form10.almacena(b) = 0 Then
+                Form10.almacena(b) = Form10.almacena(b + 1)
                 alamcenaid(b) = alamcenaid(b + 1)
 
 
@@ -48,8 +48,8 @@ Public Class carritomenu
             End If
         Next
         For z = 1 To 20
-            If menub.almacena(z) = menub.almacena(z + 1) Then
-                menub.almacena(z + 1) = 0
+            If Form10.almacena(z) = Form10.almacena(z + 1) Then
+                Form10.almacena(z + 1) = 0
                 alamcenaid(z + 1) = 0
             End If
         Next
@@ -63,8 +63,8 @@ Public Class carritomenu
             Dim a = 0
             For x = 1 To 20
 
-                If menub.almacena(x) > 0 Then
-                    Dim datos As New SqlDataAdapter("SELECT * FROM Articulos  WHERE _id='" & menub.almacena(x) & "'", conexion)
+                If Form10.almacena(x) > 0 Then
+                    Dim datos As New SqlDataAdapter("SELECT * FROM Articulos  WHERE _id='" & Form10.almacena(x) & "'", conexion)
                     Dim ds As New DataSet()
                     datos.Fill(ds, "Articulos")
 
@@ -613,7 +613,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 1
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
 
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
@@ -622,7 +622,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb2(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 2
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '  InitializeComponent()
@@ -630,7 +630,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb3(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 3
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '  InitializeComponent()
@@ -638,7 +638,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb4(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 4
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '    InitializeComponent()
@@ -646,7 +646,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb5(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 5
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         ' InitializeComponent()
@@ -654,7 +654,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb6(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 6
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '  InitializeComponent()
@@ -662,7 +662,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb7(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 7
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '   InitializeComponent()
@@ -670,7 +670,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb8(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 8
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '   InitializeComponent()
@@ -678,7 +678,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb9(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 9
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '     Me.Controls.Clear()
         '   InitializeComponent()
@@ -686,7 +686,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb10(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 10
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '    Me.Controls.Clear()
         '   InitializeComponent()
@@ -694,7 +694,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb11(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 11
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '    InitializeComponent()
@@ -702,7 +702,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb12(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 12
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '    Me.Controls.Clear()
         '   InitializeComponent()
@@ -710,7 +710,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb13(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 13
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '    InitializeComponent()
@@ -718,7 +718,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb14(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 14
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '   Me.Controls.Clear()
         '    InitializeComponent()
@@ -726,7 +726,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb15(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 15
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '    Me.Controls.Clear()
         '    InitializeComponent()
@@ -734,7 +734,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb16(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 16
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '   InitializeComponent()
@@ -742,7 +742,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb17(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 17
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '   InitializeComponent()
@@ -750,7 +750,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb18(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 18
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '  InitializeComponent()
@@ -758,7 +758,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb19(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 19
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '    Me.Controls.Clear()
         '   InitializeComponent()
@@ -766,7 +766,7 @@ Public Class carritomenu
     End Sub
     Public Sub accionb20(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Dim x = 20
-        menub.almacena(x) = 0
+        Form10.almacena(x) = 0
         alamcenaid(x) = 0
         '  Me.Controls.Clear()
         '  InitializeComponent()
@@ -791,7 +791,7 @@ Public Class carritomenu
 
 
             Else
-                menub.almacena(I) = alamcenaid(I)
+                Form10.almacena(I) = alamcenaid(I)
 
 
             End If
@@ -799,7 +799,7 @@ Public Class carritomenu
         Next
         Me.Hide()
 
-        menub.Show()
+        Form10.Show()
     End Sub
     Public Sub accionbf2(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Facturacion.Show()
@@ -816,7 +816,7 @@ Public Class carritomenu
         For I = 1 To n
 
 
-            menub.almacena(I) = alamcenaid(I)
+            Form10.almacena(I) = alamcenaid(I)
 
 
 
@@ -824,7 +824,7 @@ Public Class carritomenu
         Next
         Me.Hide()
 
-        menub.Show()
+        Form10.Show()
 
     End Sub
     Private Sub carga(sender As Object, e As EventArgs)
@@ -877,7 +877,7 @@ Public Class carritomenu
 
 
             Else
-                menub.almacena(I) = alamcenaid(I)
+                Form10.almacena(I) = alamcenaid(I)
 
 
             End If
@@ -885,7 +885,7 @@ Public Class carritomenu
         Next
         Me.Hide()
 
-        menub.Show()
+        Form10.Show()
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)

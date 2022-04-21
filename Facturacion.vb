@@ -24,7 +24,7 @@ Public Class Facturacion
 
             For x = 1 To 20
 
-                If menub.almacena(x) > 0 Then
+                If Form10.almacena(x) > 0 Then
                     Dim datos As New SqlDataAdapter("SELECT * FROM Articulos  WHERE _id='" & carritomenu.alamcenaid(x) & "'", conexion)
                     Dim ds As New DataSet()
                     datos.Fill(ds, "Articulos")
@@ -32,7 +32,7 @@ Public Class Facturacion
                     descripcion(x) = New Label
                     descripcion(x).Text = ds.Tables("Articulos").Rows(a).Item(1)
                     descripcion(x).Size = New Size(100, 20)
-                    descripcion(x).Location = New Point(100, vertical)
+                    descripcion(x).Location = New Point(100, Vertical)
                     Me.Controls.Add(descripcion(x))
                     Vertical = Vertical + 20
                 End If
@@ -126,12 +126,12 @@ Public Class Facturacion
     Public Sub accion1(ByVal sender As System.Object, ByVal e As System.EventArgs)
         MsgBox("Compra Exitosa")
         Me.Hide()
-        menub.Show()
+        Form10.Show()
         For x = 1 To carritomenu.n
-            menub.almacena(x) = 0
+            Form10.almacena(x) = 0
             carritomenu.alamcenaid(x) = 0
         Next
-        menub.menu_Load(e, e)
+        Form10.Form1_Load(e, e)
     End Sub
     Public Sub accion2(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Me.Hide()

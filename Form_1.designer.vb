@@ -1,21 +1,11 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        Try
-            If disposing AndAlso components IsNot Nothing Then
-                components.Dispose()
-            End If
-        Finally
-            MyBase.Dispose(disposing)
-        End Try
-    End Sub
 
     'Requerido por el Diseñador de Windows Forms
-    Private components As System.ComponentModel.IContainer
+
 
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
@@ -23,7 +13,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MenuStrip10 = New System.Windows.Forms.MenuStrip()
         Me.btnnuevo = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnregistrar = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnmodificar = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,54 +32,54 @@ Partial Class Form1
         Me.txtnombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.cod_usu = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Dirección = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fecha_Ingreso = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fecha_Termino = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Área = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MenuStrip1.SuspendLayout()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.MenuStrip10.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'MenuStrip1
+        'MenuStrip10
         '
-        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MenuStrip1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnnuevo, Me.btnregistrar, Me.btnmodificar, Me.btneliminar})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(773, 29)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.MenuStrip10.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.MenuStrip10.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip10.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnnuevo, Me.btnregistrar, Me.btnmodificar, Me.btneliminar})
+        Me.MenuStrip10.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip10.Name = "MenuStrip10"
+        Me.MenuStrip10.Size = New System.Drawing.Size(795, 29)
+        Me.MenuStrip10.TabIndex = 0
+        Me.MenuStrip10.Text = "MenuStrip10"
         '
         'btnnuevo
         '
-        Me.btnnuevo.Image = Global.WindowsApp1.My.Resources.Resources._new
+        'Me.btnnuevo.Image = Global.WindowsApp1.My.Resources.Resources._new
         Me.btnnuevo.Name = "btnnuevo"
         Me.btnnuevo.Size = New System.Drawing.Size(89, 25)
         Me.btnnuevo.Text = "Nuevo"
         '
         'btnregistrar
         '
-        Me.btnregistrar.Image = Global.WindowsApp1.My.Resources.Resources.add
+        ' Me.btnregistrar.Image = Global.WindowsApp1.My.Resources.Resources.add
         Me.btnregistrar.Name = "btnregistrar"
         Me.btnregistrar.Size = New System.Drawing.Size(106, 25)
         Me.btnregistrar.Text = "Registrar"
         '
         'btnmodificar
         '
-        Me.btnmodificar.Image = Global.WindowsApp1.My.Resources.Resources.create
+        'Me.btnmodificar.Image = Global.WindowsApp1.My.Resources.Resources.create
         Me.btnmodificar.Name = "btnmodificar"
         Me.btnmodificar.Size = New System.Drawing.Size(112, 25)
         Me.btnmodificar.Text = "Modificar"
         '
         'btneliminar
         '
-        Me.btneliminar.Image = Global.WindowsApp1.My.Resources.Resources.delete
+        'Me.btneliminar.Image = Global.WindowsApp1.My.Resources.Resources.delete
         Me.btneliminar.Name = "btneliminar"
         Me.btneliminar.Size = New System.Drawing.Size(102, 25)
         Me.btneliminar.Text = "Eliminar"
@@ -227,17 +217,6 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(725, 184)
         Me.DataGridView1.TabIndex = 2
         '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.DataGridView1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(21, 229)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(731, 209)
-        Me.GroupBox2.TabIndex = 3
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Listado"
-        '
         'cod_usu
         '
         Me.cod_usu.DataPropertyName = "cod_usu"
@@ -286,23 +265,34 @@ Partial Class Form1
         Me.Área.ReadOnly = True
         Me.Área.Width = 68
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.DataGridView1)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(21, 229)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(731, 209)
+        Me.GroupBox2.TabIndex = 3
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Listado"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(773, 453)
+        Me.ClientSize = New System.Drawing.Size(795, 478)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.MenuStrip10)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MainMenuStrip = Me.MenuStrip1
+        Me.MainMenuStrip = Me.MenuStrip10
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.Text = "Formulario de usuarios"
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
+        Me.MenuStrip10.ResumeLayout(False)
+        Me.MenuStrip10.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -312,7 +302,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents MenuStrip10 As MenuStrip
     Friend WithEvents btnnuevo As ToolStripMenuItem
     Friend WithEvents btnregistrar As ToolStripMenuItem
     Friend WithEvents btnmodificar As ToolStripMenuItem
